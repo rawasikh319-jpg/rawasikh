@@ -508,10 +508,12 @@ const AboutPage = () => {
                 <Reveal key={item.title} delay={Math.min(index, 5) * 55} className="h-full">
                   <article className="surface-card group flex h-full flex-col p-6">
                     <div className="flex items-start justify-between gap-3">
-                      <span className="rounded-full bg-gold-soft px-3 py-1 text-[11px] font-bold text-gold-strong">
-                        {item.client}
-                      </span>
-                      <span className="font-display text-[11px] font-semibold tracking-[0.16em] text-muted-foreground/35 nums">
+                      {item.client && (
+                        <span className="rounded-full bg-gold-soft px-3 py-1 text-[11px] font-bold text-gold-strong">
+                          {item.client}
+                        </span>
+                      )}
+                      <span className="ms-auto font-display text-[11px] font-semibold tracking-[0.16em] text-muted-foreground/35 nums">
                         {String(index + 1).padStart(2, "0")}
                       </span>
                     </div>

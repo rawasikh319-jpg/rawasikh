@@ -205,7 +205,7 @@
       },
       {
         "name": "Ms. Noura Ali",
-        "role": "Training Officer - Ministry of Education",
+        "role": "Training Officer",
         "text": "Rawasikh is a trusted and professional partner. They executed the teacher training program with high efficiency and achieved tangible results that exceeded our expectations."
       }
     ]
@@ -239,7 +239,9 @@
     "news": "News",
     "readMore": "Learn more",
     "watch": "Watch video",
-    "openExternal": "Open on YouTube"
+    "openExternal": "Open link",
+    "openYouTube": "Open on YouTube",
+    "openFacebook": "Open on Facebook"
   },
   "cta": {
     "title": "Contact Us",
@@ -385,7 +387,7 @@
       },
       {
         "title": "Teacher Training Program",
-        "client": "Ministry of Education",
+        "client": "",
         "description": "Training over 500 teachers on modern teaching strategies and active learning"
       },
       {

@@ -917,7 +917,7 @@ const SearchPage = () => {
                         eyebrow={t("searchPage.labels.project")}
                         title={tt(item.title)}
                         description={showDescriptions ? item.description : undefined}
-                        meta={tt(item.client)}
+                        meta={item.client ? tt(item.client) : undefined}
                         query={query}
                       />
                     ))}

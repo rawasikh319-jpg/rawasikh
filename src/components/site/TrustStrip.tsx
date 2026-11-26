@@ -43,7 +43,7 @@ const TrustStrip = () => {
         </Reveal>
 
         <div className="flex min-w-0 flex-wrap items-center gap-x-6 gap-y-3 lg:justify-center">
-          {items.slice(0, 4).map((item, index) => (
+          {items.filter((item) => item.client?.trim()).slice(0, 4).map((item, index) => (
             <Reveal key={item.id} delay={index * 60}>
               <span className="inline-flex items-center gap-6">
                 {index > 0 && (

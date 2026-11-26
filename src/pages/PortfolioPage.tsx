@@ -89,7 +89,9 @@ const PortfolioPage = () => {
                   )}
                   <CardContent className="p-6 flex flex-col flex-1">
                     <h3 className="text-lg font-bold text-foreground mb-1">{item.title}</h3>
-                    <p className="text-primary text-sm font-medium mb-3">{item.client}</p>
+                    {item.client && (
+                      <p className="text-primary text-sm font-medium mb-3">{item.client}</p>
+                    )}
                     <p className="text-muted-foreground text-sm leading-relaxed flex-1">{item.description}</p>
                   </CardContent>
                 </Card>

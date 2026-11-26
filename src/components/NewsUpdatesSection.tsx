@@ -114,9 +114,8 @@ const NewsUpdatesSection = () => {
         .select("*")
         .eq("is_active", true)
         .order("is_featured", { ascending: false })
-        .order("order_index", { ascending: true })
         .order("published_at", { ascending: false })
-        .limit(12);
+        .limit(100);
       if (error) throw error;
       return data as NewsItem[];
     },
@@ -132,6 +131,16 @@ const NewsUpdatesSection = () => {
       window.open(item.link_url, "_blank", "noopener,noreferrer");
     }
   };
+
+  const selectedProvider = selected
+    ? getVideoEmbed(selected.video_url || selected.link_url)?.provider
+    : null;
+  const openLabelKey =
+    selectedProvider === "youtube"
+      ? "newsSection.openYouTube"
+      : selectedProvider === "facebook"
+        ? "newsSection.openFacebook"
+        : "newsSection.openExternal";
 
   return (
     <section className="section-y border-y border-border/70 bg-paper">
@@ -374,7 +383,7 @@ const NewsUpdatesSection = () => {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 rounded-full bg-white px-3.5 py-2 text-[12px] font-bold text-zinc-900 shadow-sm transition hover:bg-zinc-100"
                   >
-                    {t("newsSection.openExternal")}
+                    {t(openLabelKey)}
                     <ExternalLink className="h-3.5 w-3.5" aria-hidden />
                   </a>
                 )}

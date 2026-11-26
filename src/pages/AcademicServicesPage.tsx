@@ -177,7 +177,7 @@ const AcademicServicesPage = () => {
                         className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.06]"
                       />
                       <div
-                        className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/45 via-black/5 to-black/15"
+                        className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-black/5"
                         aria-hidden
                       />
                     </div>

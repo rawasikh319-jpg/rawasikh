@@ -167,7 +167,7 @@
       },
       {
         "name": "Mme Noura Ali",
-        "role": "Responsable formation - Ministère de l'Éducation",
+        "role": "Responsable formation",
         "text": "Rawasikh est un partenaire fiable et professionnel. Ils ont exécuté le programme avec une grande efficacité et des résultats dépassant nos attentes."
       }
     ]
@@ -201,7 +201,9 @@
     "news": "Actualité",
     "readMore": "En savoir plus",
     "watch": "Regarder la vidéo",
-    "openExternal": "Ouvrir sur YouTube"
+    "openExternal": "Ouvrir le lien",
+    "openYouTube": "Ouvrir sur YouTube",
+    "openFacebook": "Ouvrir sur Facebook"
   },
   "cta": {
     "title": "Contactez-nous",
@@ -346,7 +348,7 @@
       },
       {
         "title": "Programme de formation des enseignants",
-        "client": "Ministère de l'Éducation",
+        "client": "",
         "description": "Formation de plus de 500 enseignants aux stratégies modernes d'enseignement et d'apprentissage actif"
       },
       {
