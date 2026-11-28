@@ -361,7 +361,7 @@ const NewsUpdatesSection = () => {
                     url={selected.video_url || selected.link_url}
                     title={selected.title}
                     autoplay
-                    className="rounded-none"
+                    className="rounded-none max-h-[50vh]"
                   />
                 </div>
               </div>
