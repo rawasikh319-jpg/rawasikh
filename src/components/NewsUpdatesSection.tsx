@@ -9,7 +9,6 @@ import VideoEmbed from "@/components/VideoEmbed";
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
@@ -334,7 +333,7 @@ const NewsUpdatesSection = () => {
           }
         >
           {selected && (
-            <div className="flex max-h-[92dvh] flex-col overflow-hidden">
+            <div className="flex max-h-[92dvh] flex-col overflow-y-auto">
               {/* Header — leaves room for the close button (end side) */}
               <DialogHeader className="shrink-0 px-5 pb-3 pt-5 text-start sm:px-6 sm:pt-6 sm:pe-14">
                 <div className="flex items-center gap-2">
@@ -351,15 +350,11 @@ const NewsUpdatesSection = () => {
                 <DialogTitle className="mt-3 line-clamp-2 text-[16px] font-bold leading-8 text-white">
                   {selected.title}
                 </DialogTitle>
-                {selected.description && (
-                  <DialogDescription className="mt-1 line-clamp-2 text-[13px] leading-7 text-white/60">
-                    {selected.description}
-                  </DialogDescription>
-                )}
+
               </DialogHeader>
 
               {/* Video — flush frame with rounded inset */}
-              <div className="shrink-0 overflow-y-auto px-3 sm:px-4">
+              <div className="shrink-0 px-3 sm:px-4">
                 <div className="overflow-hidden rounded-2xl bg-black ring-1 ring-white/10">
                   <VideoEmbed
                     key={selected.id}
