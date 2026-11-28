@@ -840,7 +840,7 @@ const LessonPage = () => {
                                         <Lock className="h-4 w-4 flex-shrink-0" />
                                       )}
                                       <div className="flex-1 min-w-0">
-                                        <p className={`truncate text-sm ${isActive ? "font-semibold text-primary" : "font-medium"}`}>
+                                        <p className={`break-words text-sm leading-snug ${isActive ? "font-semibold text-primary" : "font-medium"}`}>
                                           {lesson.title}
                                         </p>
                                         <p className="text-xs text-muted-foreground">
@@ -880,7 +880,7 @@ const LessonPage = () => {
                                         <FileQuestion className="h-4 w-4 flex-shrink-0 text-blue-600" />
                                       )}
                                       <div className="flex-1 min-w-0">
-                                        <p className="text-sm font-medium truncate">
+                                        <p className="text-sm font-medium break-words leading-snug">
                                           {t("lessonPage.quizLabel", { title: lessonQuiz.quiz?.title })}
                                         </p>
                                         <p className="text-xs text-muted-foreground">
@@ -913,7 +913,7 @@ const LessonPage = () => {
                                         <FileQuestion className="h-4 w-4 flex-shrink-0 text-blue-600" />
                                       )}
                                       <div className="flex-1 min-w-0">
-                                        <p className="text-sm font-medium truncate">
+                                        <p className="text-sm font-medium break-words leading-snug">
                                           {assignment.quiz?.title}
                                         </p>
                                         <p className="text-xs text-muted-foreground">
@@ -954,7 +954,7 @@ const LessonPage = () => {
                                 <FileQuestion className="h-4 w-4 flex-shrink-0 text-amber-600" />
                               )}
                               <div className="flex-1 min-w-0">
-                                <p className="text-sm font-medium truncate">
+                                <p className="text-sm font-medium break-words leading-snug">
                                   {t("lessonPage.finalExamLabel", { title: assignment.quiz?.title })}
                                 </p>
                                 <p className="text-xs text-muted-foreground">
@@ -995,7 +995,7 @@ const LessonPage = () => {
                                 <FileQuestion className="h-4 w-4 flex-shrink-0 text-blue-600" />
                               )}
                               <div className="flex-1 min-w-0">
-                                <p className="text-sm font-medium truncate">{form.title}</p>
+                                <p className="text-sm font-medium break-words leading-snug">{form.title}</p>
                                 <p className="text-xs text-muted-foreground">
                                   {!allDone
                                     ? t("lessonPage.finalExamLocked")
